@@ -1,0 +1,587 @@
+@import 'bootstrap.min.css';
+@import 'http://fonts.googleapis.com/css?family=Lato:300,400,700,900';
+@import 'font-awesome.min.css';
+/* Colors */
+/* Fonts */
+/* Generic classes */
+.section-title-font {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.section-title-color {
+  color: #df531e;
+}
+.section-title-margins {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.simple-paragraph {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2em;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  color: #8c8c8c;
+}
+.simple-title {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #8c8c8c;
+  text-transform: uppercase;
+}
+.orange-title-setup {
+  display: inline-block;
+  padding: 4px 24px;
+  margin: 5px 0;
+}
+.orange-title-font {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.orange-separator {
+  width: 100px;
+  height: 4px;
+  background-color: #df531e;
+  border: none;
+}
+.white-separator {
+  border: none;
+  width: 100px;
+  height: 4px;
+  background-color: #ffffff;
+}
+.yellow-separator {
+  height: 3px;
+  background-color: #e69f0f;
+  width: 100%;
+  border: none;
+}
+/* Mixins */
+.section-title {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #df531e;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.orange-title {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 4px 24px;
+  margin: 5px 0;
+  color: #df531e;
+  border: 3px solid #df531e;
+}
+.white-title {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 4px 24px;
+  margin: 5px 0;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+}
+.about__info {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2em;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  color: #8c8c8c;
+}
+.contact-us__info {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2em;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  color: #8c8c8c;
+  text-align: left;
+}
+.simple-p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2em;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  color: #8c8c8c;
+  text-align: center;
+}
+/* Index */
+.main__header {
+  width: 100%;
+  min-height: 500px;
+}
+.main__header img.main__img {
+  width: 100%;
+  height: auto;
+}
+.contact-us__index {
+  width: 100%;
+  background: url(../img/contact-us__index-bg.jpg) no-repeat;
+  background-size: cover;
+}
+/* Navigation */
+header {
+  position: relative;
+}
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  min-height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+.navigation ul {
+  width: 40%;
+}
+.navigation ul li {
+  width: 48%;
+}
+.navigation ul li a {
+  display: block;
+  text-align: center;
+  font: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 20px;
+}
+.navigation .navigation__logo {
+  position: absolute;
+  left: 50%;
+  width: 180px;
+  height: auto;
+  margin-left: -90px;
+}
+/* Benefits */
+.benefits {
+  background: url(../img/benefits__bg.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 500px;
+}
+.benefits .benefits__title {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  margin: 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+.benefits .benefits__subtitle {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.5em;
+  text-align: center;
+  color: white;
+}
+/* Services */
+.services-index {
+  width: 100%;
+}
+.services {
+  padding: 4em 0;
+}
+.services .services__container {
+  padding: 2em 0;
+}
+.services .services__item-container {
+  padding: 1em;
+  text-align: center;
+}
+.services .services__item-container .services__item--icon {
+  margin: 12px 0;
+}
+.services .services__item-container .services__item-container--title {
+  text-transform: uppercase;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 2em;
+  margin: 8px 0;
+  color: #737373;
+  font-weight: 700;
+}
+.services .services__item-container .services__item-container--info {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2em;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  color: #8c8c8c;
+}
+.services__header {
+  width: 100%;
+  min-height: 500px;
+}
+.services__header img.services__img {
+  width: 100%;
+  height: auto;
+}
+/* Pools */
+.pools {
+  padding: 4em 0 0 0;
+}
+.pools__gallery {
+  margin: 2em 0;
+}
+.pools__gallery .pool-np {
+  padding: 0;
+}
+.pools__gallery .pool__gallery-item-container {
+  height: 400px;
+}
+.pools__gallery .pool__gallery-item-container .pool__gallery-item-container--title {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 10em 0;
+  line-height: 1.5em;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.pools__gallery .pool__gallery-item-one {
+  background: url(../img/pools/one.jpg) no-repeat;
+  background-size: cover;
+}
+.pools__gallery .pool__gallery-item-two {
+  background: url(../img/pools/two.jpg) no-repeat;
+  background-size: cover;
+}
+.pools__gallery .pool__gallery-item-three {
+  background: url(../img/pools/three.jpg) no-repeat;
+  background-size: cover;
+}
+/* About */
+.about__header {
+  width: 100%;
+  min-height: 500px;
+}
+.about__header img.about__img {
+  width: 100%;
+  height: auto;
+}
+.about {
+  padding: 2em 0;
+  text-align: center;
+}
+/* Contact */
+.contact__header {
+  width: 100%;
+  min-height: 500px;
+}
+.contact__header img.contact__img {
+  width: 100%;
+  height: auto;
+}
+.contact-us {
+  text-align: center;
+  padding: 4em 0;
+}
+.contact-us .contact-us__container {
+  padding: 2em 0;
+}
+.contact-us__info address {
+  position: relative;
+}
+.contact-us__info address:before {
+  content: url(../img/icon-direccion.png);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  left: -35px;
+}
+.contact-us__info-tel {
+  position: relative;
+}
+.contact-us__info-tel:before {
+  content: url(../img/icon-telefono.png);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  left: -35px;
+}
+.contact-us__info-email {
+  position: relative;
+}
+.contact-us__info-email:before {
+  content: url(../img/icon-mail.png);
+  width: 38px;
+  height: 30px;
+  position: absolute;
+  top: 2px;
+  left: -35px;
+}
+.contact-us .custom-label {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #6e6e6e;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.contact-us .custom-input,
+.contact-us .custom-area {
+  background-color: #6e6e6e;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  border: 0;
+  outline: 0;
+}
+.contact-us .custom-btn {
+  margin-left: 20px;
+  text-transform: uppercase;
+  background-color: #6e6e6e;
+  font: 'Lato', Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 12px;
+}
+/* Custom contact index */
+.contact-us__info-index address {
+  position: relative;
+  color: #ffffff;
+  text-align: left;
+}
+.contact-us__info-index address:before {
+  content: url(../img/icon-direccion-white.png);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  left: -35px;
+}
+.contact-us__info-tel-index {
+  position: relative;
+  color: #ffffff;
+  text-align: left;
+}
+.contact-us__info-tel-index:before {
+  content: url(../img/icon-telefono-white.png);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  left: -35px;
+}
+.contact-us__info-email-index {
+  position: relative;
+  color: #ffffff;
+  text-align: left;
+}
+.contact-us__info-email-index:before {
+  content: url(../img/icon-mail-white.png);
+  width: 38px;
+  height: 30px;
+  position: absolute;
+  top: 2px;
+  left: -35px;
+}
+.contact-us .custom-label-index {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.contact-us .custom-input-index,
+.contact-us .custom-area-index {
+  background-color: #ffffff;
+  color: #6e6e6e;
+  font-weight: 700;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  border: 0;
+  outline: 0;
+}
+.contact-us .custom-btn-index {
+  margin-left: 20px;
+  text-transform: uppercase;
+  background-color: transparent;
+  font: 'Lato', Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  border: 2px solid #ffffff;
+}
+#mobile,  .navigation__mobile {
+    display: none;
+}
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width : 1200px) {
+    .services-index {
+        background: url(../img/t__bg.jpg) no-repeat;
+        background-position: right;
+        background-color: cover;
+    }
+    .benefits__title {
+        padding-top: 6em;
+    }
+  }
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) and (max-width : 992px){
+        .main__header, .services__header, .about__header, .contact__header {
+            min-height: 350px;
+        }
+        .services {
+            padding: 2em 0;
+        }
+        .benefits__title {
+            padding-top: 4em;
+        }
+        .contact-us__info-index address,
+        .contact-us__info-tel-index,
+        .contact-us__info-email-index,
+        .contact-us__info address,
+        .contact-us__info-tel,
+        .contact-us__info-email {
+            text-align: center;
+        }
+        .contact-us__info-email-index,
+        .contact-us__info-email {
+            padding-bottom: 1em;
+        }
+        .contact-us__info-index address:before,
+        .contact-us__info-tel-index:before,
+        .contact-us__info-email-index:before,
+        .contact-us__info address:before,
+        .contact-us__info-tel:before,
+        .contact-us__info-email:before  {
+            display: none;
+        }
+    }
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) and (max-width : 767px) {
+        .navigation__logo, .navigation__mobile {
+            display: none; 
+        }
+        .main__header, .services__header, .about__header, .contact__header  {
+            min-height: 200px;
+        }
+        .benefits__title {
+            padding-top: 3em;
+        }
+        .contact-us__index, .contact-us__container {
+            overflow: hidden;
+        }
+        .contact-us__info-index address,
+        .contact-us__info-tel-index,
+        .contact-us__info-email-index,
+        .contact-us__info address,
+        .contact-us__info-tel,
+        .contact-us__info-email {
+            text-align: center;
+        }
+        .contact-us__info-email-index,
+        .contact-us__info-email {
+            padding-bottom: 1em;
+        }
+        .contact-us__info-index address:before,
+        .contact-us__info-tel-index:before,
+        .contact-us__info-email-index:before,
+        .contact-us__info address:before,
+        .contact-us__info-tel:before,
+        .contact-us__info-email:before  {
+            display: none;
+        }
+    }
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) and (max-width : 479px){
+        .main__header, .services__header, .about__header, .contact__header  {
+            min-height: 120px;
+        }
+        .navigation {
+            display: none;
+        }
+        .navigation__mobile {
+            padding: 1em .5em;
+            background-color: #1a2229;
+            color: white;
+            margin: 0;
+            position: relative;
+            display: block;
+            width: 100%;
+        }
+        .navigation__mobile .fa {
+            margin-left: 10px;
+            font-size: 18px;
+        }
+        .navigation__mobile .fa:hover{
+            cursor: pointer;
+        }
+        .navigation__mobile ul {
+            position: absolute;
+            top: 40px;
+            left: 5px;
+            width: 100%;
+        }
+        .navigation__mobile ul li {
+            width: 100%;
+            display: block;
+            background-color: #1a2229;
+        }
+        .navigation__mobile ul li:first-child a {
+            border-top: 1px solid #2c3238;           
+        }
+        .navigation__mobile a {
+            padding: 1em .8em;
+            text-align: left;
+            color: white;
+            font-size: 14px;
+            display: block;
+            font-family: 'Lato', Arial, Helvetica, sans-serif;
+            width: 100%;
+            border-bottom: 1px solid #2c3238;
+            transition: all .5s ease;
+        }
+        .navigation__mobile a:hover {
+            text-decoration: none;
+            background-color: #2c3238;
+        }
+        .navigation__logo {
+            display: none; 
+        }
+        .contact-us__index, .contact-us__container {
+            overflow: hidden;
+        }
+        .benefits__title {
+            padding-top: 1em;
+            font-size: 14px;
+        }
+        .benefits__subtitle {
+            font-size: 12px;
+        }
+        .contact-us__info-index address,
+        .contact-us__info-tel-index,
+        .contact-us__info-email-index,
+        .contact-us__info address,
+        .contact-us__info-tel,
+        .contact-us__info-email {
+            text-align: center;
+        }
+        .contact-us__info-email-index,
+        .contact-us__info-email {
+            padding-bottom: 1em;
+        }
+        .contact-us__info-index address:before,
+        .contact-us__info-tel-index:before,
+        .contact-us__info-email-index:before,
+        .contact-us__info address:before,
+        .contact-us__info-tel:before,
+        .contact-us__info-email:before  {
+            display: none;
+        }
+    }
